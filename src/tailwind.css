@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@layer base {
+  html,
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fafafa;
+    @apply antialiased;
+  }
+}
+
+/* FLAG MENU  */
+.menu-flag .menu-flags-button {
+  @apply h-14 border-2 border-gray-300 transition-colors focus:border-primary-brand-color;
+}
+
+.menu-flag ul {
+  @apply w-full;
+}
+
+.menu-flags-button > span span:nth-child(2) {
+  @apply text-sm pl-2;
+}
+
+/* CAMPAİGNS SLIDE */
+.campaigns-slide .slick-slide > div {
+  @apply h-[200px];
+}
+.campaigns-slide .slick-track > div {
+  @apply pl-4;
+}
