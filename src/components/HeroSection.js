@@ -11,6 +11,7 @@ export default function HeroSection() {
   };
 
   const settings = {
+    arrows: false,
     infinite: true,
     dots: false,
     speed: 500,
@@ -39,9 +40,9 @@ export default function HeroSection() {
         </div>
       </Slider>
 
-      <div className="w-[1232px] h-full flex items-center justify-between absolute top-0 left-1/2 -translate-x-1/2 z-20 ">
+      <div className="container mx-auto h-full flex items-center justify-between absolute inset-0 z-20">
         {/* left */}
-        <div>
+        <div className="w-[350px] flex-start">
           <figure className="w-[180px] h-[180px] ">
             <img
               className="w-full h-full"
@@ -50,14 +51,14 @@ export default function HeroSection() {
             ></img>
           </figure>
           <div>
-            <h1 className="text-4xl w-[350px] my-10 text-white font-semibold">
+            <h1 className="text-4xl my-10 text-white font-semibold">
               Dakikalar içinde kapınızda
             </h1>
           </div>
         </div>
 
         {/* right */}
-        <div className="w-[400px] bg-brand-white-color flex flex-col flex-shrink-0 p-6 rounded-lg">
+        <div className="w-[400px] bg-brand-white-color flex flex-col flex-shrink-0 p-6 rounded-lg lg:px-[18px]">
           <h5 className="text-brand-color text-center font-semibold mb-[15px]">
             Giriş yap veya kayıt ol
           </h5>

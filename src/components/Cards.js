@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Cards() {
   return (
-    <section className="w-[1232px] flex gap-x-4 mt-14 mb-16 mx-auto">
-      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 w-[400px] h-[353px] shadow-lg shadow-slate-200 rounded-lg">
+    <section className="grid grid-cols-1 gap-4 md:grid-cols-3 mb-16 ">
+      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 h-[353px] md:shadow-lg md:shadow-slate-200 md:rounded-lg">
         <figure className="flex justify-center items-center w-[150px] h-[150px]">
           <img src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg" />
         </figure>
@@ -15,7 +15,7 @@ export default function Cards() {
         </span>
       </div>
 
-      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 w-[400px] h-[353px] shadow-lg shadow-slate-200 rounded-lg">
+      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 h-[353px] md:shadow-lg md:shadow-slate-200 md:rounded-lg">
         <figure className="flex justify-center items-center w-[150px] h-[150px]">
           <img src="https://getir.com/_next/static/images/intro-market-courier-34cd8b0ca1d547580d506566edfacf8d.svg" />
         </figure>
@@ -27,7 +27,7 @@ export default function Cards() {
         </span>
       </div>
 
-      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 w-[400px] h-[353px] shadow-lg shadow-slate-200 rounded-lg">
+      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 h-[353px] md:shadow-lg md:shadow-slate-200 md:rounded-lg">
         <figure className="flex justify-center items-center w-[150px] h-[150px]">
           <img src="https://getir.com/_next/static/images/intro-discount-6248544cb695830a2e25debd3c0f3d29.svg" />
         </figure>

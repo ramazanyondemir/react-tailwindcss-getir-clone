@@ -28,10 +28,40 @@
   @apply text-sm pl-2;
 }
 
-/* CAMPAİGNS SLIDE */
-.campaigns-slide .slick-slide > div {
-  @apply h-[200px];
+/* SLIDER */
+.campaigns-slide {
+  @apply -mx-[3px] lg:-mx-1;
 }
-.campaigns-slide .slick-track > div {
-  @apply pl-4;
+
+/* 
+SLIDER CONTAINER
+Genel kapsayıcıdaki paddinglerin silinmesi için slider */
+
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .slider-container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .slider-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider-container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .slider-container {
+    max-width: 1272px;
+  }
+}
+@media (min-width: 1536px) {
+  .slider-container {
+    max-width: 1528px;
+  }
 }

@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    container: {},
+    container: {
+      padding: {
+        lg: "2rem",
+      },
+    },
     extend: {
       backgroundImage: (theme) => ({
         "mobile-app":

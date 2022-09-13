@@ -7,10 +7,10 @@ export default function Categories() {
   const [categories, setCategories] = useState(categoryData);
 
   return (
-    <div className="bg-white py-6 shadow-md shadow-gray-200	">
-      <div className="w-[1232px] mx-auto">
+    <div className="bg-white py-6 md:first-letter:px-5 shadow-md shadow-gray-200">
+      <div className="container mx-auto">
         <Title>Kategoriler</Title>
-        <ul className="grid grid-cols-10 gap-4">
+        <ul className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-10 lg:gap-4">
           {categories.map((category, id) => (
             <Category category={category} key={id} />
           ))}

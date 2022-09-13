@@ -4,8 +4,8 @@ import { FaUser, FaUserPlus } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <div className="bg-brand-color sticky flex justify-center">
-      <nav className="w-[1232px] h-[45px] flex justify-between sticky">
+    <div className="bg-brand-color flex justify-center lg:sticky lg:inset-0 lg:z-30">
+      <nav className="container h-[45px] flex justify-between sticky">
         {/* NAV SOL  */}
         <div className="h-full inline-flex">
           <a
@@ -25,17 +25,17 @@ export default function Header() {
         <nav className="flex gap-x-1 text-sm font-bold text-gray-200 leading-[19px]">
           <button className="flex h-full tracking-tight font-semibold items-center gap-x-2 px-4">
             <TbWorld size={19} />
-            <span>Türkçe (TR)</span>
+            <span className="hidden lg:block">Türkçe (TR)</span>
           </button>
 
           <button className="flex h-full items-center gap-x-2 px-3">
             <FaUser size={19} />
-            <span>Giriş yap</span>
+            <span className="hidden lg:block">Giriş yap</span>
           </button>
 
           <button className="flex h-full items-center gap-x-2 px-3">
             <FaUserPlus size={19} />
-            <span>Kayıt Ol</span>
+            <span className="hidden lg:block">Kayıt Ol</span>
           </button>
         </nav>
       </nav>
