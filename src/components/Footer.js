@@ -137,7 +137,7 @@ export default function Footer() {
       </nav>
 
       <article>
-        <div className="container flex flex-col items-center gap-y-2 border border-red-500 mx-auto py-6 md:flex-row">
+        <div className="container flex flex-col items-center gap-y-2 mx-auto py-6 md:flex-row">
           <span className="flex items-center text-sm">© 2022 Getir</span>
           <div className="flex items-center text-primary-brand-color text-sm md:ml-8 md:relative md:before:w-[3px] md:before:h-[3px] md:before:bg-black md:before:absolute md:before:-left-4 md:before:top-1/2 md:before:-translate-y-1/2 md:before:rounded-full">
             Bilgi Toplumu Hizmetleri

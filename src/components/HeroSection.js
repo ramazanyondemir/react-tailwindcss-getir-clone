@@ -22,8 +22,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="overflow-hidden relative md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:w-full before:h-full before:z-10">
-      <Slider {...settings}>
+    <section className="overflow-hidden md:relative md:h-[500px] md:before:bg-gradient-to-r md:before:from-primary-brand-color md:before:to-transparent md:before:absolute md:before:w-full md:before:h-full md:before:z-10">
+      <Slider className="hidden md:block" {...settings}>
         <div className="focus:outline-none">
           <img
             className="w-full h-[500px] object-cover"
@@ -40,10 +40,10 @@ export default function HeroSection() {
         </div>
       </Slider>
 
-      <div className="container mx-auto h-full flex items-center justify-between absolute inset-0 z-20">
+      <div className="container mx-auto h-full flex items-center justify-between md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:z-20 ">
         {/* left */}
-        <div className="w-[350px] flex-start">
-          <figure className="w-[180px] h-[180px] ">
+        <div className="hidden md:block md:ml-2 lg:ml-0">
+          <figure className="w-[180px] h-[180px]">
             <img
               className="w-full h-full"
               alt="getir"
@@ -51,14 +51,14 @@ export default function HeroSection() {
             ></img>
           </figure>
           <div>
-            <h1 className="text-4xl my-10 text-white font-semibold">
+            <h1 className="w-auto lg:w-[350px] text-4xl mt-10 text-white font-semibold">
               Dakikalar içinde kapınızda
             </h1>
           </div>
         </div>
 
         {/* right */}
-        <div className="w-[400px] bg-brand-white-color flex flex-col flex-shrink-0 p-6 rounded-lg lg:px-[18px]">
+        <div className="w-full bg-brand-white-color flex flex-col flex-shrink-0 py-6 px-4 rounded-lg md:mr-2 md:w-[400px] lg:mr-0 lg:px-[18px] xl:p-6">
           <h5 className="text-brand-color text-center font-semibold mb-[15px]">
             Giriş yap veya kayıt ol
           </h5>

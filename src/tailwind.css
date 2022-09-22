@@ -15,53 +15,55 @@
   }
 }
 
-/* FLAG MENU  */
-.menu-flag .menu-flags-button {
-  @apply h-14 border-2 border-gray-300 transition-colors focus:border-primary-brand-color;
-}
+@layer utilities {
+  /* FLAG MENU  */
+  .menu-flag .menu-flags-button {
+    @apply h-14 border-2 border-gray-300 transition-colors focus:border-primary-brand-color;
+  }
 
-.menu-flag ul {
-  @apply w-full;
-}
+  .menu-flag ul {
+    @apply w-full;
+  }
 
-.menu-flags-button > span span:nth-child(2) {
-  @apply text-sm pl-2;
-}
+  .menu-flags-button > span span:nth-child(2) {
+    @apply text-sm pl-2;
+  }
 
-/* SLIDER */
-.campaigns-slide {
-  @apply -mx-[3px] lg:-mx-1;
+  /* SLIDER */
+  .campaigns-slide {
+    @apply -mx-[3px] lg:-mx-1;
+  }
 }
-
 /* 
 SLIDER CONTAINER
 Genel kapsayıcıdaki paddinglerin silinmesi için slider */
-
-.container {
-  width: 100%;
-}
-@media (min-width: 640px) {
-  .slider-container {
-    max-width: 640px;
+@layer components {
+  .container {
+    width: 100%;
   }
-}
-@media (min-width: 768px) {
-  .slider-container {
-    max-width: 768px;
+  @media (min-width: 640px) {
+    .slider-container {
+      max-width: 640px;
+    }
   }
-}
-@media (min-width: 1024px) {
-  .slider-container {
-    max-width: 1024px;
+  @media (min-width: 768px) {
+    .slider-container {
+      max-width: 768px;
+    }
   }
-}
-@media (min-width: 1280px) {
-  .slider-container {
-    max-width: 1272px;
+  @media (min-width: 1024px) {
+    .slider-container {
+      max-width: 1024px;
+    }
   }
-}
-@media (min-width: 1536px) {
-  .slider-container {
-    max-width: 1528px;
+  @media (min-width: 1280px) {
+    .slider-container {
+      max-width: 1272px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .slider-container {
+      max-width: 1528px;
+    }
   }
 }

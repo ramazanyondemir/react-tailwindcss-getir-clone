@@ -4,13 +4,13 @@ import { FaUser, FaUserPlus } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <div className="bg-brand-color flex justify-center lg:sticky lg:inset-0 lg:z-30">
+    <div className="bg-brand-color flex justify-center px-[6px] lg:sticky lg:inset-0 lg:z-30">
       <nav className="container h-[45px] flex justify-between sticky">
         {/* NAV SOL  */}
-        <div className="h-full inline-flex">
+        <div className="h-full flex">
           <a
             href="#"
-            className="bg-primary-brand-color inline-flex h-10 py-3 px-5 align-center mt-[5px] rounded-t-md"
+            className="bg-primary-brand-color inline-flex h-10 py-[10px] px-2 align-center mt-[5px] rounded-t-md md:py-3 md:px-5"
           >
             <figure className="w-full h-full flex align-center justify-center">
               <img
