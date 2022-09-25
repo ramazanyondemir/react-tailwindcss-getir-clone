@@ -1,9 +1,12 @@
+import { useWindowWidth } from "@react-hook/window-size";
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import Slider from "react-slick";
 
 export default function HeroSection() {
   const [selected, setSelected] = useState("TR");
+  const windowWidth = useWindowWidth();
+  console.log(windowWidth);
 
   const customLabels = {
     TR: { primary: "+90" },
@@ -22,25 +25,27 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="overflow-hidden md:relative md:h-[500px] md:before:bg-gradient-to-r md:before:from-primary-brand-color md:before:to-transparent md:before:absolute md:before:w-full md:before:h-full md:before:z-10">
-      <Slider className="hidden md:block" {...settings}>
-        <div className="focus:outline-none">
-          <img
-            className="w-full h-[500px] object-cover"
-            alt="Hero section"
-            src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg"
-          />
-        </div>
-        <div className="focus:outline-none">
-          <img
-            className="w-full h-[500px] object-cover"
-            alt="Hero section"
-            src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"
-          />
-        </div>
-      </Slider>
+    <section className="md:overflow-hidden md:relative md:h-[500px] md:before:bg-gradient-to-r md:before:from-primary-brand-color md:before:to-transparent md:before:absolute md:before:w-full md:before:h-full md:before:z-10">
+      {windowWidth >= 768 && (
+        <Slider {...settings}>
+          <div className="focus:outline-none">
+            <img
+              className="w-full h-[500px] object-cover"
+              alt="Hero section"
+              src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg"
+            />
+          </div>
+          <div className="focus:outline-none">
+            <img
+              className="w-full h-[500px] object-cover"
+              alt="Hero section"
+              src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"
+            />
+          </div>
+        </Slider>
+      )}
 
-      <div className="container mx-auto h-full flex items-center justify-between md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:z-20 ">
+      <div className="container mx-auto h-full flex items-center justify-between md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:z-20">
         {/* left */}
         <div className="hidden md:block md:ml-2 lg:ml-0">
           <figure className="w-[180px] h-[180px]">

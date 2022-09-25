@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Cards() {
   return (
-    <section className="grid grid-cols-1 gap-4 md:grid-cols-3 mb-16 ">
-      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 h-[353px] md:shadow-lg md:shadow-slate-200 md:rounded-lg">
+    <section className="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-3 mb-16 ">
+      <div className="bg-white flex flex-col justify-center items-center pt-[60px] pb-[40px] px-4 h-[353px] shadow-lg shadow-slate-200 md:rounded-lg">
         <figure className="flex justify-center items-center w-[150px] h-[150px]">
           <img src="https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg" />
         </figure>
