@@ -1,141 +1,111 @@
 import React from "react";
+import MenuLink from "./ui/MenuLink";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { TbWorld } from "react-icons/tb";
+import { Collapse } from "react-collapse";
 
 export default function Footer() {
+  const menus = [
+    {
+      title: "Getir'i keşfedin",
+      items: [
+        {
+          title: "Hakkımızda",
+        },
+        {
+          title: "Kariyer",
+        },
+        {
+          title: "Teknoloji Kariyerleri",
+        },
+        {
+          title: "İletişim",
+        },
+        {
+          title: "Sosyal Sorumluluk Projeleri",
+        },
+      ],
+    },
+    {
+      title: "Yardıma mı ihtiyacınız var?",
+      items: [
+        {
+          title: "Sıkca Sorular Sorular",
+        },
+        {
+          title: "Kişisel Verilerin Korunması",
+        },
+        {
+          title: "Gizlilik Politikası",
+        },
+        {
+          title: "Kullanım Koşulları",
+        },
+        {
+          title: "Çerez Politikası",
+        },
+      ],
+    },
+    {
+      title: "İş Ortağımız Olun",
+      items: [
+        {
+          title: "Bayimiz Olun",
+        },
+        {
+          title: "Deponuzu Kiralayın",
+        },
+        {
+          title: "GetirYemek Restoranı Olun",
+        },
+        {
+          title: "GetirÇarşı İşletmesi Olun",
+        },
+        {
+          title: "Zincir Restoranlar",
+        },
+      ],
+    },
+  ];
   return (
-    <footer>
-      <nav className="pb-5">
-        <div className="container flex-1 mx-auto flex gap-x-6 pt-10">
-          <div className="flex flex-col flex-[3_1_0%] gap-y-4">
-            <div className="text-primary-brand-color text-lg font-normal">
-              Getir'i indirin!
-            </div>
-            <a href="#">
-              <figure>
-                <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" />
+    <footer className="bg-white">
+      <section className="container mx-auto flex flex-col md:flex-row gap-y-3 md:gap-x-6 pt-10">
+        <div className="flex flex-col flex-[3_1_0%] gap-y-4">
+          <div className="text-primary-brand-color text-lg font-normal">
+            Getir'i indirin!
+          </div>
+          <a href="#">
+            <figure>
+              <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" />
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" />
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" />
+            </figure>
+          </a>
+        </div>
+        {menus.map((menu, index) => (
+          <MenuLink key={index} {...menu} />
+        ))}
+        <div className="hidden lg:flex lg:flex-1 lg:h-full">
+          <div className="bg-white rounded-lg shadow-md">
+            <a href="#" className="block p-4">
+              <figure className="w-[72px] h-[84px]">
+                <img
+                  src="https://getir.com/_next/static/images/etbis-33c159729adc8b4e2b946310f038d2f4.png"
+                  className="w-full h-full object-contain "
+                />
               </figure>
             </a>
-            <a href="#">
-              <figure>
-                <img src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" />
-              </figure>
-            </a>
-            <a href="#">
-              <figure>
-                <img src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" />
-              </figure>
-            </a>
-          </div>
-
-          <div className="flex flex-col gap-y-4 flex-[3_1_0%]">
-            <div className="text-primary-brand-color text-lg leading-[26px] font-normal">
-              Getir'i keşfedin
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Hakkımızda
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Kariyer
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Teknoloji Kariyerleri
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                İletişim
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Sosyal Sorumluluk Projeleri
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-y-4 flex-[3_1_0%]">
-            <div className="text-primary-brand-color text-lg leading-[26px] font-normal">
-              Yardıma mı ihtiyacınız var?
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Sıkça Sorulan Sorular
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Kişisel Verilerin Korunması
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Gizlilik Politikası
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Kullanım Koşulları
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Çerez Politikası
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-y-4 flex-[3_1_0%]">
-            <div className="text-primary-brand-color text-lg leading-[26px] font-normal">
-              İş Ortağımız Olun
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Bayimiz Olun
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Deponuzu Kiralayın
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                GetirYemek Restoranı Olun
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                GetirÇarşı İşletmesi Olun
-              </a>
-            </div>
-            <div className="leading-[18px]">
-              <a href="#" className="text-sm text-gray-900">
-                Zincir Restoranlar
-              </a>
-            </div>
-          </div>
-
-          <div className="hidden xl:flex xl:flex-1 xl:h-full">
-            <div className="bg-white rounded-lg shadow-md">
-              <a href="#" className="block p-4">
-                <figure className="w-[72px] h-[84px]">
-                  <img
-                    src="https://getir.com/_next/static/images/etbis-33c159729adc8b4e2b946310f038d2f4.png"
-                    className="w-full h-full object-contain "
-                  />
-                </figure>
-              </a>
-            </div>
           </div>
         </div>
-      </nav>
-
+      </section>
       <article>
         <div className="container flex flex-col items-center gap-y-2 mx-auto py-6 md:flex-row">
           <span className="flex items-center text-sm">© 2022 Getir</span>

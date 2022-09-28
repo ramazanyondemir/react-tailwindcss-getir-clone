@@ -6,7 +6,6 @@ import Slider from "react-slick";
 export default function HeroSection() {
   const [selected, setSelected] = useState("TR");
   const windowWidth = useWindowWidth();
-  console.log(windowWidth);
 
   const customLabels = {
     TR: { primary: "+90" },

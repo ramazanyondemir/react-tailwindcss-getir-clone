@@ -7,7 +7,7 @@ export default function Categories() {
   const [categories, setCategories] = useState(categoryData);
 
   return (
-    <div className="bg-white py-6 md:px-5 shadow-md shadow-gray-200">
+    <div className="bg-white py-6 md:px-5 md:shadow-md md:shadow-gray-200">
       <div className="container mx-auto">
         <div className="pl-4 md:pl-0">
           <Title>Kategoriler</Title>

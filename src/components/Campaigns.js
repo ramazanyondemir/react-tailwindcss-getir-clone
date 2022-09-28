@@ -12,7 +12,6 @@ export default function Campaigns() {
 
   const settings = {
     arrows: false,
-
     autoplaySpeed: 3000,
     autoplay: true,
     Infinity: true,
