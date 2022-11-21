@@ -17,11 +17,10 @@ export default function Campaigns() {
     Infinity: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    veriableWidth: true,
     className: "campaigns-slide",
     responsive: [
       {
-        breakpoint: 1023,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
         },
@@ -60,20 +59,22 @@ export default function Campaigns() {
             </button>
           </div>
         )}
-        <Slider {...settings}>
-          {campaigns &&
-            campaigns.map((banner, id) => (
-              <div key={id}>
-                <picture className="block md:px-1">
-                  <img
-                    alt={banner.name}
-                    src={banner.image}
-                    className="w-full h-full md:rounded-md"
-                  />
-                </picture>
-              </div>
-            ))}
-        </Slider>
+        <div>
+          <Slider {...settings}>
+            {campaigns &&
+              campaigns.map((banner, id) => (
+                <div key={id}>
+                  <picture className="block md:pl-2">
+                    <img
+                      alt={banner.name}
+                      src={banner.image}
+                      className="w-full h-full md:rounded-md"
+                    />
+                  </picture>
+                </div>
+              ))}
+          </Slider>
+        </div>
       </div>
     </section>
   );
