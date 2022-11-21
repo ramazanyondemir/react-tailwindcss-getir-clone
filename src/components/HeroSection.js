@@ -30,15 +30,15 @@ export default function HeroSection() {
           <div className="focus:outline-none">
             <img
               className="w-full h-[500px] object-cover"
-              alt="Hero section"
-              src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg"
+              alt="Slider image"
+              src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg"
             />
           </div>
           <div className="focus:outline-none">
             <img
               className="w-full h-[500px] object-cover"
-              alt="Hero section"
-              src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"
+              alt="Slider image"
+              src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg"
             />
           </div>
         </Slider>

@@ -26,7 +26,7 @@ export default function MobileApp() {
         <figure className="hidden md:block min-w-[605px] !h-[288px] -mb-1 self-end">
           <img
             className="w-full h-full object-contain"
-            src="https://getir.com/_next/static/images/phoneLanding-88c033545710c4808054072689e187d7.png"
+            src="https://cdn.getir.com/getirweb-images/common/landing/phoneLanding.png"
           />
         </figure>
       </section>
