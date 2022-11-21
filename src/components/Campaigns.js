@@ -17,6 +17,7 @@ export default function Campaigns() {
     Infinity: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     className: "campaigns-slide",
     responsive: [
       {
@@ -64,7 +65,7 @@ export default function Campaigns() {
             {campaigns &&
               campaigns.map((banner, id) => (
                 <div key={id}>
-                  <picture className="block md:pl-2">
+                  <picture className="block md:px-3">
                     <img
                       alt={banner.name}
                       src={banner.image}

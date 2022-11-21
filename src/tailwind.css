@@ -31,6 +31,6 @@
 
   /* SLIDER */
   .campaigns-slide {
-    @apply md:-ml-2;
+    @apply -mx-3;
   }
 }
