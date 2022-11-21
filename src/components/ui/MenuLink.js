@@ -14,7 +14,6 @@ export default function MenuLink({ title, items }) {
   };
 
   useEffect(() => {
-    console.log("asd");
     if (isOpen && windowWidth <= 767) {
       setIsOpen(false);
     }
