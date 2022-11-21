@@ -98,7 +98,7 @@ export default function Footer() {
             <a href="#" className="block p-4">
               <figure className="w-[72px] h-[84px]">
                 <img
-                  src="https://getir.com/_next/static/images/etbis-33c159729adc8b4e2b946310f038d2f4.png"
+                  src="https://cdn.getir.com/getirweb-images/common/etbis.png"
                   className="w-full h-full object-contain "
                 />
               </figure>
